@@ -1,0 +1,59 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;;
+    min-height: 100vh;
+    background-color: #f0f0f0; /*Temporary clean background*/
+}
+
+.calculator{
+    width: 320px;
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.display{
+    border-color: #3b3b3b;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#calc-screen{
+    display: block;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: right;
+    font-family: monospace;
+}
+
+.all-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button{
+    padding: 20px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Make the Clear (AC) button take upto 3 columns */
+#clear{
+    grid-column: span 3;
+}
+
+button[data-type="operator"], #equals {
+    background-color: #ff9f0a;
+    color: white;
+}
