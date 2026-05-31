@@ -13,4 +13,12 @@ const allButtons = document.querySelector('.all-buttons'); /*selectiing the all-
 function add (a,b) {return a+b;}
 function subract (a,b) {return a-b;}
 function multiply (a,b) {return a*b;}
+// Logic implimentation to make sure that no number is divisible by 0
+function divide (a,b){
+    if (b===0) {
+        return "Error: Division by zero not possible";
+    }
+    return a/b;
+} 
+
 
