@@ -13,23 +13,25 @@ body{
 }
 
 .calculator{
-    width: 320px;
+    width: 100%;
+    max-width: 340px;
     background-color: #212121;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0,0,0,0.4);
 }
 
 .display{
     border-color: #3b3b3b;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #calc-screen{
     display: block;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: right;
     font-family: monospace;
 }
@@ -37,12 +39,14 @@ body{
 .all-buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 12px;
 }
 
 button{
-    padding: 20px;
-    font-size: 1.25rem;
+    padding: 18px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -50,7 +54,7 @@ button{
 
 /* Make the Clear (AC) button take upto 3 columns */
 #clear{
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
 button[data-type="operator"], #equals {
